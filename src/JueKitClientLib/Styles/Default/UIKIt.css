@@ -1,0 +1,190 @@
+/*
+ * Notify Window
+ */
+.jueNtfWnd
+{
+    position:absolute;
+    top:200px;
+    left:200px;
+    overflow:hidden;
+}
+
+.jueNtfWndHeaderW
+{
+    padding:0 0 0 5px;
+    background:url(Images/ntfWnd.gif) no-repeat 0 0;
+}
+
+.jueNtfWndHeader
+{
+    padding:0 5px 0 0;
+    background:url(Images/ntfWnd.gif) no-repeat right 0;
+}
+
+.jueNtfWndHeaderI
+{
+    height:25px;
+    background:url(Images/ntfWnd.gif) repeat-x 0 -25px;
+}
+
+.jueNtfWndTitle
+{
+    padding:0 0 0 25px;
+    height:25px;
+    font-weight:bold;
+    line-height:25px;
+    color:#256f95;
+    background:url(Images/ntfWnd.gif) no-repeat 0 -50px;
+    overflow:hidden;
+}
+
+.jueNtfWndClose
+{
+    float:right;
+    display:block;
+    margin:6px 0 0 0;
+    width:13px;
+    height:13px;
+    background:url(Images/miniCloseBtn.gif) no-repeat 0 0;
+    cursor:pointer;
+}
+
+.jueNtfWndClose:hover
+{
+    background-position:0 -13px;
+}
+
+.jueNtfWndBody
+{
+    padding:0;
+    border:1px solid #5e92ad;
+    border-top:0;
+    border-bottom:0;
+    background:#e6f1f4;
+    overflow:auto;
+}
+
+.jueNtfWndBodyI
+{
+    padding:5px;
+    color:#256f95;
+}
+
+.jueNtfWndFooterW
+{
+    padding:0 0 0 5px;
+    background:url(Images/ntfWnd.gif) no-repeat 0 bottom;
+}
+
+.jueNtfWndFooter
+{
+    padding:0 5px 0 0;
+    background:url(Images/ntfWnd.gif) no-repeat right bottom;
+}
+
+.jueNtfWndFooterI
+{
+    height:4px;
+    overflow:hidden;
+    border-bottom:1px solid #5e92ad;
+    background:#e6f1f4;
+}
+
+
+
+
+/*
+ * Bubble Window
+ */
+.jueBblWnd
+{
+    position:absolute;
+    top:200px;
+    left:200px;
+    width:230px;
+    overflow:hidden;
+}
+
+.jueBblWndHeaderW
+{
+    padding:0 0 0 5px;
+    background:url(Images/bblWnd.gif) no-repeat 0 0;
+}
+
+.jueBblWndHeader
+{
+    padding:0 5px 0 0;
+    background:url(Images/bblWnd.gif) no-repeat right 0;
+}
+
+.jueBblWndHeaderI
+{
+    height:24px;
+    overflow:hidden;
+    border-top:1px solid #9cb2d3;
+    background:#fff;
+}
+
+.jueBblWndTitle
+{
+    padding:0 0 0 5px;
+    height:25px;
+    font-weight:bold;
+    line-height:25px;
+    color:#256f95;
+    overflow:hidden;
+}
+
+.jueBblWndClose
+{
+    float:right;
+    display:block;
+    margin:6px 3px 0 0;
+    width:13px;
+    height:13px;
+    background:url(Images/miniCloseBtn.gif) no-repeat 0 0;
+    cursor:pointer;
+}
+
+.jueBblWndClose:hover
+{
+    background-position:0 -13px;
+}
+
+.jueBblWndBody
+{
+    padding:0;
+    border:1px solid #9cb2d3;
+    border-top:0;
+    border-bottom:0;
+    background:#fff;
+    overflow:auto;
+}
+
+.jueBblWndBodyI
+{
+    padding:5px;
+    color:#256f95;
+}
+
+.jueBblWndFooterW
+{
+    padding:0 0 0 35px;
+    background:url(Images/bblWnd.gif) no-repeat 0 bottom;
+}
+
+.jueBblWndFooter
+{
+    padding:0 5px 0 0;
+    height:19px;
+    overflow:hidden;
+    background:url(Images/bblWnd.gif) no-repeat right -25px;
+}
+
+.jueBblWndFooterI
+{
+    height:4px;
+    overflow:hidden;
+    border-bottom:1px solid #9cb2d3;
+    background:#fff;
+}

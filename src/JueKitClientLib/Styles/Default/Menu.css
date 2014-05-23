@@ -1,0 +1,115 @@
+/* Menu */
+
+.jueMenu {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+	z-index: 3300;
+}
+.jueMenuHL {
+	padding: 0 0 0 2px;
+	background: url(Images/menu1.png) no-repeat 0 -60px;
+}
+.jueMenuHR {
+	padding: 0 2px 0 0;
+	background: url(Images/menu1.png) no-repeat right -60px;
+}
+.jueMenuHM {
+	overflow: hidden;
+	height: 2px;
+	background: url(Images/menu1.png) repeat-x 0 -65px;
+}
+.jueMenuBL {
+	padding: 0 0 0 2px;
+	background: url(Images/menu2.gif) repeat-y left;
+}
+.jueMenuBR {
+	padding: 0 2px 0 0;
+	background: url(Images/menu2.gif) repeat-y right;
+}
+.jueMenuBM {
+	background: #fff url(Images/menu3.gif) repeat-y left;
+}
+.jueMenuFL {
+	clear: both;
+	padding: 0 0 0 2px;
+	background: url(Images/menu1.png) no-repeat 0 -75px;
+}
+.jueMenuFR {
+	padding: 0 2px 0 0;
+	background: url(Images/menu1.png) no-repeat right -75px;
+}
+.jueMenuFM {
+	overflow: hidden;
+	height: 2px;
+	background: url(Images/menu1.png) repeat-x 0 -70px;
+}
+.jueMenuItemWrap {
+	clear: both;
+	padding: 0 0 0 3px;
+	height: 25px;
+}
+.jueMenuItem {
+	padding: 0 3px 0 0;
+}
+.jueMenuItemInner {
+	height: 25px;
+}
+.jueMenuItemIcon {
+	float: left;
+	width: 22px;
+	height: 25px;
+}
+.jueMenuItemChecked .jueMenuItemIcon, .jueMenuItemRadio .jueMenuItemIcon {
+	background: url(Images/menu1.png) no-repeat 0 -120px;
+}
+.jueMenuItemLabel {
+	color: #00156E;
+	cursor: default;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 5px;
+}
+.jueMenuItemPopupBtn {
+	height: 25px;
+	position: relative;
+	float:right;
+	top: 0;
+	right:0;
+	width: 25px;
+}
+.jueMenuItemPopup .jueMenuItemPopupBtn {
+	background: url(Images/menu1.png) no-repeat 18px -82px;
+}
+.jueMenuItemSeparator {
+	padding: 0;
+	overflow: hidden;
+	background: url(Images/menu1.png) 0 -80px;
+	height: 2px;
+}
+.jueMenuItemSeparator .jueMenuItem {
+	overflow: hidden;
+	background: url(Images/menu3.gif) repeat-y 0 0;
+	height: 2px;
+}
+.jueMenuItemSeparator .jueMenuItemInner {
+	display: none;
+}
+.jueMenuItemSeparator .jueMenuItemIcon {
+}
+.jueMenuItemSeparator .jueMenuItemLabel {
+}
+.jueMenuItemHover {
+	background: url(Images/menu1.png) no-repeat 0 0;
+}
+.jueMenuItemHover .jueMenuItem {
+	background: url(Images/menu1.png) no-repeat right 0;
+}
+.jueMenuItemHover .jueMenuItemInner {
+	background: url(Images/menu1.png) repeat-x 0 -30px;
+}
+.jueMenuItemDisabled .jueMenuItemLabel {
+	color: #A7A7A7;
+}

@@ -1,0 +1,139 @@
+/*
+ * Tree
+ */
+ 
+.jueTree
+{
+    /*display: inline-block; */
+}
+
+.jueTreeNode
+{
+    margin:0;
+    padding:0;
+    height:18px;
+}
+
+.jueTreeNodeExpanded, .jueTreeNodeCollapsed, .jueTreeNodeLeaf
+{
+    margin:0;
+    padding:0;
+}
+
+.jueTreeNodeSwitch
+{
+    display:block;
+    width:16px;
+    height:16px;
+    background-repeat:no-repeat;
+    background-position:center center;
+    white-space:nowrap;
+}
+
+.jueTreeNodeExpanded .jueTreeNodeSwitch
+{
+    background-image:url(Images/Tree/btn_collapse.gif);
+}
+.jueTreeNodeCollapsed .jueTreeNodeSwitch
+{
+    background-image:url(Images/Tree/btn_expand.gif);
+}
+.jueTreeNodeLeaf .jueTreeNodeSwitch
+{
+    background-image:url(Images/Tree/btn_leaf.gif);
+}
+
+.jueTreeNodeExpanded .jueTreeNodeChild
+{
+    clear:both;
+    margin:0;
+    padding:0 0 0 16px;
+}
+
+.jueTreeNodeCollapsed .jueTreeNodeChild
+{
+    display:none;
+}
+
+.jueTree .jueTreeTopNodeChild
+{
+    padding:0;
+}
+
+.jueTreeNodeLeaf .jueTreeNodeChild
+{
+    display:none;
+}
+
+.jueTreeNodeChk
+{
+    display:block;
+    height:16px;
+    width:16px;
+    background:url(Images/chk.gif) no-repeat 0px 0px;
+    cursor:default;
+}
+
+.jueTreeNodeChk:hover
+{
+    background-position:-20px 0px;
+}
+
+.jueTreeNodeChked
+{
+    background-position:-40px 0px;
+}
+.jueTreeNodeChked:hover
+{
+    background-position:-60px 0px;
+}
+
+.jueTreeNodeIcon
+{
+    display:block;
+    height:16px;
+    width:0px;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.jueTreeNodeTextWrap
+{
+    display:block;
+    margin:0 0 0 3px;
+    padding:0 0 0 3px;
+    color:#333333;
+    text-decoration:none;
+    cursor:default;
+    white-space:nowrap;
+}
+
+.jueTreeNodeText
+{
+    display:block;
+}
+
+.jueTreeNodeTextInner
+{
+    display:block;
+    line-height:16px;
+    padding:0 3px 0 1px;
+    white-space:nowrap;
+    word-break:keep-all;
+}
+
+.jueTreeNodeCurrent .jueTreeNodeTextWrap
+{
+    padding:0 0 0 3px;
+    background:url(Images/treeNodeText.gif) no-repeat 0 0;
+}
+.jueTreeNodeCurrent .jueTreeNodeText
+{
+    padding:0 3px 0 0;
+    background:url(Images/treeNodeText.gif) no-repeat right 0;
+}
+.jueTreeNodeCurrent .jueTreeNodeTextInner
+{
+    color:#256F95;
+    background:#BDDABC;
+}

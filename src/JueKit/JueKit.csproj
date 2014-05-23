@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A47823CC-CDB3-4AEE-8F72-74B4B17E6E8E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JueKit</RootNamespace>
+    <AssemblyName>JueKit</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\ClientPropertyCollection.cs" />
+    <Compile Include="Collections\TreeNodeCollection.cs" />
+    <Compile Include="ComponentModel\IRichClientComponent.cs" />
+    <Compile Include="Configuration\ConfigurationManager.cs" />
+    <Compile Include="Configuration\IUserConfiguration.cs" />
+    <Compile Include="Configuration\JueKitConfiguration.cs" />
+    <Compile Include="Configuration\JueKitSettings.cs" />
+    <Compile Include="Configuration\UserConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ClientResource.cs" />
+    <Compile Include="Resources\JueKitResourceManager.cs" />
+    <Compile Include="Resources\JueKitStringResource.cs" />
+    <Compile Include="Resources\Strings.Designer.cs" />
+    <Compile Include="Json\IJsonlizable.cs" />
+    <Compile Include="Json\JsonService.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Web\UI\IWindowContent.cs" />
+    <Compile Include="Web\UI\WebControls\ContainerWindow.cs" />
+    <Compile Include="Web\UI\WebControls\BlankToolbarItem.cs" />
+    <Compile Include="Web\UI\WebControls\OutlookBarCollapsePosition.cs" />
+    <Compile Include="Web\UI\WebControls\PanelControlBuilder.cs" />
+    <Compile Include="Web\UI\WebControls\PanelFooter.cs" />
+    <Compile Include="Web\UI\WebControls\PanelContent.cs" />
+    <Compile Include="Web\UI\WebControls\PanelHeader.cs" />
+    <Compile Include="Web\UI\WebControls\Panel.cs" />
+    <Compile Include="Web\UI\WebControls\ToolbarItem.cs" />
+    <Compile Include="Web\UI\WebControls\TextBox.cs" />
+    <Compile Include="Web\UI\WebControls\ILazyLoadControl.cs" />
+    <Compile Include="Web\UI\WebControls\TextBoxMode.cs" />
+    <Compile Include="Web\UI\WindowContentUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WebUtility.cs" />
+    <Compile Include="Web\ServerEventArgs.cs" />
+    <Compile Include="Web\ServerEventHandler.cs" />
+    <Compile Include="Web\CssClassUtility.cs" />
+    <Compile Include="Web\UI\WebControls\Button.cs" />
+    <Compile Include="Web\UI\WebControls\ButtonType.cs" />
+    <Compile Include="Web\UI\WebControls\CheckBox.cs" />
+    <Compile Include="Web\UI\WebControls\CheckBoxList.cs" />
+    <Compile Include="Web\UI\WebControls\HyperLinkList.cs" />
+    <Compile Include="Web\UI\WebControls\HyperLink.cs" />
+    <Compile Include="Web\UI\WebControls\DatePicker.cs" />
+    <Compile Include="Web\UI\WebControls\DropdownList.cs" />
+    <Compile Include="Web\UI\WebControls\DropdownControl.cs" />
+    <Compile Include="Web\UI\WebControls\DataGrid.cs" />
+    <Compile Include="Web\UI\WebControls\CssMedia.cs" />
+    <Compile Include="Web\UI\ClientEventHandler.cs" />
+    <Compile Include="Web\UI\WebControls\ClientResourceManager.cs" />
+    <Compile Include="Web\UI\WebControls\ClientResourceManagerControlBuilder.cs" />
+    <Compile Include="Web\UI\WebControls\CssLink.cs" />
+    <Compile Include="Web\UI\WebControls\IRichClientControl.cs" />
+    <Compile Include="Web\UI\WebControls\ListItem.cs" />
+    <Compile Include="Web\UI\WebControls\RichClientControl.cs" />
+    <Compile Include="Web\UI\WebControls\RichClientPanel.cs" />
+    <Compile Include="Web\UI\WebControls\RichClientServiceProvider.cs" />
+    <Compile Include="Web\UI\WebControls\Script.cs" />
+    <Compile Include="Web\UI\DockStyle.cs" />
+    <Compile Include="Web\UI\Page.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\UI\WebControls\CommandItem.cs" />
+    <Compile Include="Web\UI\WebControls\ButtonToolbarItem.cs" />
+    <Compile Include="Web\UI\WebControls\Toolbar.cs" />
+    <Compile Include="Web\UI\WebControls\Splitter.cs" />
+    <Compile Include="Web\UI\WebControls\LazyLoadWebControl.cs" />
+    <Compile Include="Web\UI\WebControls\OutlookBarPanel.cs" />
+    <Compile Include="Web\UI\WebControls\OutlookBar.cs" />
+    <Compile Include="Web\UI\WebControls\AccordionPanel.cs" />
+    <Compile Include="Web\UI\WebControls\AccordionSet.cs" />
+    <Compile Include="Web\UI\WebControls\ProgressBar.cs" />
+    <Compile Include="Web\UI\WebControls\SplitDirection.cs" />
+    <Compile Include="Web\UI\WebControls\SplitterCell.cs" />
+    <Compile Include="Web\UI\WebControls\TabPanel.cs" />
+    <Compile Include="Web\UI\WebControls\Tabset.cs" />
+    <Compile Include="Web\UI\WebControls\Tree.cs" />
+    <Compile Include="Web\UI\WebControls\TreeControlBuilder.cs" />
+    <Compile Include="Web\UI\WebControls\TreeNode.cs" />
+    <Compile Include="Web\UI\WebControls\TreeNodeControlBuilder.cs" />
+    <Compile Include="Web\UI\WebControls\Window.cs" />
+    <Compile Include="Web\UI\WebControls\RichClientWebControl.cs" />
+    <Compile Include="Web\VirtualPathUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JueKit.Common\JueKit.Common.csproj">
+      <Project>{23B5D546-2475-4BCA-A6AB-2FA081A64608}</Project>
+      <Name>JueKit.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JueKit.Design\JueKit.Design.csproj">
+      <Project>{C9D091D7-C3D4-428C-8FB8-DA2FAE15A3C2}</Project>
+      <Name>JueKit.Design</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

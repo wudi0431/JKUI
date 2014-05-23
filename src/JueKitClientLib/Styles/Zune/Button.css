@@ -1,0 +1,86 @@
+/*
+ * Button
+ */
+.jueBtn
+{
+    overflow:visible;
+    padding:0 0 0 3px;
+    background:url(Images/btn.gif) no-repeat left 0;
+    height:21px;
+    display:table-cell;
+    cursor:default;
+}
+
+.jueBtnInner
+{
+    overflow:visible;
+    padding:0 3px 0 0;
+    background:url(Images/btn.gif) no-repeat right 0;
+    height:21px;
+    display:table-cell;
+}
+
+.jueBtnBtn
+{
+    overflow:visible;
+    margin:0;
+    padding:0;
+    border:0;
+    background:transparent url(Images/btn.gif) repeat-x 0 -30px;
+    height:21px;
+}
+
+.jueBtnText
+{
+    padding:0 10px;
+    line-height:21px;
+}
+
+/* Hover & Active */
+.jueBtnHover .jueBtn, .jueBtnActive .jueBtn
+{
+    background-position:0 -60px;
+}
+
+.jueBtnHover .jueBtnInner, .jueBtnActive .jueBtnInner
+{
+    background-position:right -60px;
+}
+
+.jueBtnHover .jueBtnBtn, .jueBtnActive .jueBtnBtn
+{
+    background-position:0 -90px;
+}
+
+/* Down */
+.jueBtnDown .jueBtn
+{
+    background-position:0 -120px;
+}
+
+.jueBtnDown .jueBtnInner
+{
+    background-position:right -120px;
+}
+
+.jueBtnDown .jueBtnBtn
+{
+    background-position:0 -150px;
+}
+
+/* Gray / Disabled */
+.jueBtnGray .jueBtnL
+{
+    background-position:0 -180px;
+}
+
+.jueBtnGray .jueBtnM
+{
+    background-position:0 -210px;
+}
+
+.jueBtnGray .jueBtnR
+{
+    background-position:right -180px;
+}
+

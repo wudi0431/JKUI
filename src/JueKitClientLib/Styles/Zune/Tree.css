@@ -1,0 +1,104 @@
+/*
+ * Tree
+ */
+ 
+.jueTree
+{
+}
+
+.jueTreeNode
+{
+    margin:0;
+    padding:0;
+}
+
+.jueTreeNodeExpanded, .jueTreeNodeCollapsed, .jueTreeNodeLeaf
+{
+    margin:0;
+    padding:0;
+    overflow:visible;
+}
+
+.jueTreeNodeSwitch
+{
+    float:left;
+    overflow:hidden;
+    width:16px;
+    height:16px;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.jueTreeNodeExpanded .jueTreeNodeSwitch
+{
+    background-image:url(Images/Tree/btn_collapse.gif);
+}
+.jueTreeNodeCollapsed .jueTreeNodeSwitch
+{
+    background-image:url(Images/Tree/btn_expand.gif);
+}
+.jueTreeNodeLeaf .jueTreeNodeSwitch
+{
+    background-image:url(Images/Tree/btn_leaf.gif);
+}
+
+.jueTreeNodeExpanded .jueTreeNodeChild
+{
+    clear:both;
+    margin:0;
+    padding:0 0 0 16px;
+}
+
+.jueTreeNodeCollapsed .jueTreeNodeChild
+{
+    display:none;
+}
+
+.jueTreeNodeLeaf .jueTreeNodeChild
+{
+    display:none;
+}
+
+.jueTreeNodeBody
+{
+    float:left;
+    height:16px;
+}
+
+.jueTreeNodeIcon
+{
+    float:left;
+    height:16px;
+    width:0px;
+    overflow:hidden;
+}
+
+.jueTreeNodeTextWrap
+{
+    display:block;
+    float:left;
+    margin:0 0 0 3px;
+    padding:0 0 0 3px;
+    color:#333333;
+    text-decoration:none;
+    cursor:default;
+}
+
+.jueTreeNodeText
+{
+    display:block;
+}
+
+.jueTreeNodeTextInner
+{
+    display:block;
+    line-height:16px;
+    padding:0 3px 0 1px;
+}
+
+.jueTreeNodeCurrent .jueTreeNodeTextInner
+{
+    color:#fff;
+    background:#0A246A;
+}
+

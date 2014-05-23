@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Release Test</title>
+    <script type="text/javascript" src="JueKit_r2_0.js"></script>
+    <script type="text/javascript" src="Default.js"></script>
+</head>
+<body>
+    <h2>String</h2>
+    <h3>format</h3>
+    <div>
+        <input type="text" id="txtStringFormat" /><input type="button" id="btnStringFormat" value="format" onclick='alert(JueKit.String.format("You have typed: {0}", JueKit("txtStringFormat").value));' />
+        <code>
+        alert(JueKit.String.format("You have typed: {0}", JueKit("txtStringFormat").value));
+        </code>
+    </div>
+    <h2>DateTime</h2>
+    <input type="button" value="format" onclick="alert(JueKit.DateTime.format(new Date(), 'yyyy-MM-dd hh:mm:ss'));" />
+</body>
+</html>

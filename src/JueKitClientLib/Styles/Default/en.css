@@ -1,0 +1,15 @@
+*
+{
+    -webkit-text-size-adjust: none; 
+    font-size:10px;
+}
+
+body, input, textarea, button, td, th
+{
+    font-size:10px;
+}
+
+.jueOutlookBarHBox
+{
+    layout-flow:vertical-ideographic;
+}

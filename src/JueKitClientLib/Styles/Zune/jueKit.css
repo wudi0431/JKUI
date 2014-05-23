@@ -1,0 +1,665 @@
+/*
+ * Common
+ */
+
+body
+{
+    font-size:12px;
+}
+
+form
+{
+    margin:0;
+    padding:0;
+}
+
+.clear
+{
+    clear:both; overflow:hidden;
+}
+
+.clearBoth
+{
+    clear: both;
+    overflow:hidden;
+    height:0;
+}
+
+.clearLeft
+{
+    clear: left;
+}
+
+.clearRight
+{
+    clear: right;
+}
+
+.displayNone
+{
+    display: none;
+}
+
+.displayBlock
+{
+    display: block;
+}
+
+.floatLeft
+{
+    float: left;
+}
+
+.floatRight
+{
+    float: right;
+}
+
+/* Tabset */
+.jueTab
+{
+    clear:both;
+}
+
+/* Tabset 头部 */
+.jueTabHeader
+{
+}
+
+/* Tabset 选择条 */
+.jueTabStripWrap
+{
+    overflow:hidden;
+}
+
+.jueTabStrip
+{
+}
+
+.jueTabSelectorGroup
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:20px;
+    background:url(Images/tabStrip.gif) repeat-x bottom;
+}
+
+/* Tab标签 */
+.jueTabSelector
+{
+    float:left;
+    margin:0 0 0 1px;
+}
+
+/* 第一个Tab标签 */
+.jueTabSelectorFirst
+{
+    margin-left:3px;
+}
+
+.jueTabSelector a
+{
+    display:block;
+    padding:0 0 0 3px;
+    background:url(Images/tabStrip.gif) no-repeat 0 0;
+    color:#000;
+    text-decoration:none;
+}
+
+.jueTabSelectorRight
+{
+    display:block;
+    margin:0;
+    padding:0 3px 0 0;
+    background:url(Images/tabStrip.gif) no-repeat right 0;
+}
+
+.jueTabSelectorCenter
+{
+    display:block;
+    margin:0;
+    padding:0 5px;
+    background:url(Images/tabStrip.gif) repeat-x 0 -50px;
+}
+
+/* Tab标签文字 */
+.jueTabSelectorText
+{
+    line-height:19px;
+}
+
+/* 鼠标悬停状态的Tab标签 */
+.jueTabSelector a:hover
+{
+    background-position:0 -100px;
+}
+
+.jueTabSelector a:hover .jueTabSelectorRight
+{
+    background-position:right -100px;
+}
+
+.jueTabSelector a:hover .jueTabSelectorCenter
+{
+    background-position:0 -150px;
+}
+
+/* 当前Tab标签 */
+.jueTabSelectorCurrent a
+{
+    background-position:0 -100px;
+}
+
+.jueTabSelectorCurrent .jueTabSelectorRight
+{
+    background-position:right -100px;
+}
+
+.jueTabSelectorCurrent .jueTabSelectorCenter
+{
+    background-position:0 -150px;
+}
+
+.jueTabSelectorCurrent .jueTabSelectorText
+{
+    line-height:20px;
+}
+
+.jueTabPanelGroup
+{
+    margin:0;
+    padding:5px;
+    border:1px solid #9d9d9d;
+    border-top:0;
+}
+
+.jueTabPanel
+{
+    height:100%;
+    overflow:auto;
+}
+
+/* jueProgressBar */
+/* 进度条 */
+.jueProgressBarWrap
+{
+    border:0;
+    padding:0 0 0 4px;
+    background:url(Images/progressBar.gif) no-repeat left 0;
+}
+
+.jueProgressBar
+{
+    padding:0 4px 0 0;
+    background:url(Images/progressBar.gif) no-repeat right 0;
+}
+
+.jueProgressBarInner
+{
+    padding:0;
+    height:16px;
+    overflow:hidden;
+    background:url(Images/progressBar.gif) repeat-x 0 -20px;
+}
+
+/* 已完成的进度 */
+.jueProgressBarPassed
+{
+    position:relative;
+    top:3px;
+    width:0;
+    height:10px;
+    overflow:hidden;
+    background:url(Images/progressBar.gif) repeat-x 0 -40px;
+}
+
+/* 平滑状态的进度条 */
+.jueProgressBarSmooth .jueProgressBarPassed
+{
+    background-position:0 -60px;
+}
+
+/* jueAccordionSet */
+.jueAccoridionSet
+{
+    padding:10px;
+    background:#7F7F7F;
+}
+
+/* 可折叠面板 */
+.jueAccordionPanel
+{
+    margin-top:20px;
+}
+
+/* 可折叠面板头部 */
+.jueAccordionPanelHeaderWrap
+{
+    padding-left:5px;
+    background:url(Images/accordionSet.gif) no-repeat left 0;
+}
+
+.jueAccordionPanelHeader
+{
+    padding-right:5px;
+    background:url(Images/accordionSet.gif) no-repeat right 0;
+}
+
+.jueAccordionPanelHeaderInner
+{
+    height:23px;
+    background:url(Images/accordionSet.gif) repeat-x 0 -30px;
+}
+
+/* 标题文字 */
+.jueAccordionPanelTitle
+{
+    margin:0 0 0 10px;
+    line-height:23px;
+    font-weight:bold;
+    color:#FFEDC8;
+}
+
+/* 关闭状态折叠开关 */
+.jueAccordionPanelSwitch
+{
+    overflow:hidden;
+    display:block;
+    float:right;
+    margin:3px 2px 0 0;
+    height:16px;
+    width:16px;
+    background:url(Images/accordionSet.gif) no-repeat 0 -100px;
+}
+
+/* 鼠标悬停时候的关闭状态折叠开关 */
+.jueAccordionPanelSwitch:hover
+{
+    background-position:0 -120px;
+}
+
+/* 展开状态折叠开关 */
+.jueAccordionPanelSwitchExpanded
+{
+    background-position:0 -60px;
+}
+
+/* 鼠标悬停时候的展开状态折叠开关 */
+.jueAccordionPanelSwitchExpanded:hover
+{
+    background-position:0 -80px;
+}
+
+.jueAccordionPanelSwitch span
+{
+    display:none;
+}
+
+/* 面板内容 */
+.jueAccordionPanelContent
+{
+    padding:10px;
+    background:#F1EEE9;
+}
+
+
+/* jueOutlookBar */
+.jueOutlookBar
+{
+    border:1px solid #000;
+}
+
+.jueOutlookBarPanelGroup
+{
+    width:100%;
+    background:#fff;
+    overflow:auto;
+}
+
+.jueOutlookBarSelectorGroup
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.jueOutlookBarSelector
+{
+    margin:0;
+    padding:0;
+}
+
+.jueOutlookBarSelector a
+{
+    display:block;
+    margin:0;
+    padding:0 0 0 5px;
+    height:31px;
+    border-top:1px solid #4C535C;
+    background:url(Images/outlookBar.gif) repeat-x 0 0;
+    color:#2C394B;
+    line-height:31px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.jueOutlookBarSelector a:hover
+{
+    background-position:0 -40px;
+}
+
+.jueOutlookBarSelectorDown a
+{
+    background-position:0 -80px;
+}
+
+.jueOutlookBarSelectorFirst
+{
+}
+
+.jueOutlookBarSelectorCurrent a
+{
+    background-position:0 -120px;
+    color:#000;
+}
+
+.jueOutlookBarSelectorCurrent a:hover
+{
+    background-position:0 -160px;
+}
+
+.jueOutlookBarSelectorText
+{
+}
+
+.jueOutlookBarAdjustStrip
+{
+    overflow:hidden;
+    height:7px;
+    border-top:1px solid #4C535C;
+    background:url(Images/outlookBar.gif) repeat-x 0 -200px;
+    cursor:n-resize;
+}
+
+.jueOutlookBarAdjustStripInner
+{
+    overflow:hidden;
+    height:7px;
+    background:url(Images/outlookBar.gif) no-repeat center -210px;
+}
+
+.jueOutlookBarPanel
+{
+}
+
+/* Window */
+.jueWnd
+{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.jueWndTopWrap
+{
+    padding-left:6px;
+    background:url(Images/wnd.gif) no-repeat 0 0;
+}
+
+.jueWndTop
+{
+    padding-right:6px;
+    background:url(Images/wnd.gif) no-repeat right 0;
+}
+
+.jueWndTopInner
+{
+    overflow:hidden;
+    padding:6px 0 3px;
+    height:21px;
+    background:url(Images/wnd.gif) repeat-x 0 -30px;
+}
+
+.jueWndBodyWrap
+{
+    padding-left:4px;
+    background:url(Images/wnd_bdr.gif) repeat-y 0 0;
+}
+
+.jueWndBody
+{
+    padding-right:4px;
+    background:url(Images/wnd_bdr.gif) repeat-y right 0;
+}
+
+.jueWndBodyInner
+{
+    overflow:auto;
+    background-color:#E2E2E2;
+}
+
+.jueWndBottomWrap
+{
+    padding-left:4px;
+    background:url(Images/wnd.gif) no-repeat 0 bottom;
+}
+
+.jueWndBottom
+{
+    padding-right:4px;
+    background:url(Images/wnd.gif) no-repeat right bottom;
+}
+
+.jueWndBottomInner
+{
+    overflow:hidden;
+    height:4px;
+    background:url(Images/wnd.gif) repeat-x 0 -60px;
+}
+
+.jueWndSysBtnGroup
+{
+    float:right;
+}
+
+.jueWndSysBtn
+{
+    display:block;
+    float:left;
+    margin-left:2px;
+    width:21px;
+    height:21px;
+    background:url(Images/wnd_btn.gif) no-repeat 0 0;
+}
+
+.jueWndSysBtn span
+{
+    display:none;
+}
+
+.jueWndSysBtnMin
+{
+    background-position:0 0;
+}
+
+.jueWndSysBtnMin:hover
+{
+    background-position:0 -25px;
+}
+
+.jueWndSysBtnMax
+{
+    background-position:-25px 0;
+}
+
+.jueWndSysBtnMax:hover
+{
+    background-position:-25px -25px;
+}
+
+.jueWndSysBtnRestore
+{
+    background-position:-50px 0;
+}
+
+.jueWndSysBtnRestore:hover
+{
+    background-position:-50px -25px;
+}
+
+.jueWndSysBtnClose
+{
+    background-position:-75px 0;
+}
+
+.jueWndSysBtnClose:hover
+{
+    background-position:-75px -25px;
+}
+
+.jueWndTitleText
+{
+    padding-left:5px;
+    color:#fff;
+    font-weight:bold;
+    line-height:21px;
+}
+
+.jueWndMaximum .jueWndTopWrap
+{
+    padding:0;
+}
+
+.jueWndMaximum .jueWndTop
+{
+    padding:0;
+}
+
+.jueWndMaximum .jueWndTopInner
+{
+    background-position:0 -35px;
+    padding-top:1px;
+}
+
+.jueWndMaximum .jueWndBottomInner
+{
+    height:0;
+}
+
+.jueWndMaximum .jueWndBodyWrap
+{
+    padding:0;
+}
+
+.jueWndMaximum .jueWndBody
+{
+    padding:0;
+}
+    
+.jueWndMaximum .jueWndSysBtnMax, .jueWndMinimum .jueWndSysBtnMax
+{
+    background-position:-50px 0;
+}
+
+.jueWndMaximum .jueWndSysBtnMax:hover, .jueWndMinimum .jueWndSysBtnMax:hover
+{
+    background-position:-50px -25px;
+}
+
+/* MessageBox */
+
+/* 消息文字 */
+.jueMsgBoxMsg
+{
+    float:left;
+    padding:20px;
+    height:auto;
+    background-repeat:no-repeat;
+    background-position:10px 10px;
+}
+
+.jueMsgBoxWarning
+{
+    padding-left:60px;
+    background-image:url(Images/msg_warning_32.gif);
+}
+
+.jueMsgBoxError
+{
+    padding-left:60px;
+    background-image:url(Images/msg_error_32.gif);
+}
+
+.jueMsgBoxQuestion
+{
+    padding-left:60px;
+    background-image:url(Images/msg_question_32.gif);
+}
+
+.jueMsgBoxInformation
+{
+    padding-left:60px;
+    background-image:url(Images/msg_information_32.gif);
+}
+
+/* 消息按钮 */
+.jueMsgBoxBtnGroup
+{
+    clear:both;
+    padding:0 15px 15px;
+    text-align:center;
+}
+
+.jueMsgBoxBtnGroup .jueBtn
+{
+    margin:0 4px;
+}
+
+/* Form */
+.jueForm
+{
+    color:#666666;
+}
+.jueForm label
+{
+    margin:0;
+    padding:0;
+    height:21px;
+    line-height:21px;
+}
+.jueFormItem
+{
+    clear:both;
+    border-bottom:1px solid #C1D2D5;
+    padding:1px 0 1px 10px;
+    height:30px;
+    background:#EDF5F6;
+}
+.jueForm .jueFormLabel
+{
+    float:left;
+    padding:0;
+    color:#333333;
+    font-weight:bold;
+    line-height:30px;
+}
+.jueFormEl
+{
+    padding:3px 9px 4px;
+    background:#fff;
+}
+.jueFormTxt
+{
+    border:1px solid #C1D2D5;
+    margin:0;
+    padding:0 5px;
+    width:90%;
+    height:21px;
+    background:#F5F9F9 url(Images/txtBg.gif) no-repeat 0 0;
+    color:#666666;
+    line-height:21px;
+}
+.jueFormOpt
+{
+}

@@ -1,0 +1,1695 @@
+﻿/*
+ * Common
+ */
+
+body, input, textarea, button, td, th
+{
+    font-size:12px;
+}
+
+body, form
+{
+    margin:0;
+    padding:0;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.clearBoth
+{
+    clear: both;
+}
+
+.clearLeft
+{
+    clear: left;
+}
+
+.clearRight
+{
+    clear: right;
+}
+
+.displayNone
+{
+    display: none;
+}
+
+.displayBlock
+{
+    display: block;
+}
+
+.floatLeft
+{
+    float: left;
+}
+
+.floatRight
+{
+    float: right;
+}
+
+
+/* Tabset */
+.jueTab
+{
+    clear:both;
+}
+
+/* Tabset 头部 */
+.jueTabHeader
+{
+    height:35px;
+    overflow:hidden;
+}
+
+/* Tabset 选择条 */
+.jueTabStripWrap
+{
+    overflow:hidden;
+}
+
+.jueTabStrip
+{
+    background:url(Images/tabset.gif) repeat-x bottom;
+    overflow:hidden;
+}
+
+.jueTabSelectorGroup
+{
+    margin:0;
+    padding:5px 0 0 0;
+    list-style:none;
+    height:30px; 
+}
+
+/* Tab标签 */
+.jueTabSelector
+{
+    float:left;
+    margin:0 0 0 0;
+}
+
+/* 第一个Tab标签 */
+.jueTabSelectorFirst
+{
+    margin-left:3px;
+}
+
+.jueTabSelector a
+{
+    display:block;
+    padding:0 0 0 6px;
+    background:url(Images/tabset.gif) no-repeat 0 -999px;
+    color:#000;
+    text-decoration:none;
+}
+
+.jueTabSelectorRight
+{
+    display:block;
+    margin:0;
+    padding:0 6px 0 0;
+    background:url(Images/tabset.gif) no-repeat right -999px;
+}
+
+.jueTabSelectorCenter
+{
+    display:block;
+    margin:0;
+    padding:0 5px;
+    background:url(Images/tabset.gif) repeat-x 0 -999px;
+}
+
+/* Tab标签文字 */
+.jueTabSelectorText
+{
+    line-height:30px;
+    color:#88A8B9;
+    font-weight:bold;
+    white-space:nowrap;
+    word-break:keep-all;
+}
+
+/* 鼠标悬停状态的Tab标签 */
+.jueTabSelector a:hover
+{
+    background-position:0 0;
+}
+
+.jueTabSelector a:hover .jueTabSelectorRight
+{
+    background-position:right 0;
+}
+
+.jueTabSelector a:hover .jueTabSelectorCenter
+{
+    background-position:0 -30px;
+}
+
+/* 当前Tab标签 */
+.jueTabSelectorCurrent a
+{
+    background-position:0 0;
+}
+
+.jueTabSelectorCurrent .jueTabSelectorRight
+{
+    background-position:right 0;
+}
+
+.jueTabSelectorCurrent .jueTabSelectorCenter
+{
+    background-position:0 -30px;
+}
+
+.jueTabSelectorCurrent .jueTabSelectorText
+{
+    line-height:30px;
+    color:#246F95;
+}
+
+
+.jueTabOpts
+{
+    float:right;
+}
+
+.jueTabOpts a
+{
+    display:block;
+    float:left;
+    height:35px;
+    line-height:35px;
+    padding:0 5px;
+}
+
+.jueTabOpts a:hover
+{
+    text-decoration:underline;
+}
+
+.jueTabPanelGroup
+{
+    margin:0;
+    padding:0;
+    background:#fff;
+}
+
+.jueTabPanel
+{
+    height:100%;
+    
+}
+
+.jueTabFooterW
+{
+}
+
+.jueTabFooter
+{
+    
+}
+
+.jueTabFooterI
+{
+    height:0;
+    overflow:hidden;
+}
+
+/* 进度条 */
+.jueProgressBarWrap
+{
+    border:0;
+    padding:0 0 0 4px;
+    background:url(Images/progressBar.gif) no-repeat left 0;
+}
+
+.jueProgressBar
+{
+    padding:0 4px 0 0;
+    background:url(Images/progressBar.gif) no-repeat right 0;
+}
+
+.jueProgressBarInner
+{
+    padding:0;
+    height:16px;
+    overflow:hidden;
+    background:url(Images/progressBar.gif) repeat-x 0 -20px;
+}
+
+/* 已完成的进度 */
+.jueProgressBarPassed
+{
+    position:relative;
+    top:3px;
+    width:0;
+    height:10px;
+    overflow:hidden;
+    background:url(Images/progressBar.gif) repeat-x 0 -40px;
+}
+
+/* 平滑状态的进度条 */
+.jueProgressBarSmooth .jueProgressBarPassed
+{
+    background-position:0 -60px;
+}
+
+/* jueAccordionSet */
+.jueAccordionSet
+{
+    background:#fff;
+    overflow:auto;
+}
+
+/* 可折叠面板 */
+.jueAccordionPanel
+{
+    clear:both;
+    margin-bottom:5px;
+}
+
+/* 可折叠面板头部 */
+.jueAccordionPanelHeaderWrap
+{
+    border:1px solid #E1E9EB;
+    border-bottom-color:#C1D2D5;
+    height:23px;
+    background:url(Images/dataGrid.gif) repeat-x 0 0;
+    overflow:hidden;
+}
+
+.jueAccordionPanelHeader
+{
+    padding:0 5px;
+}
+
+.jueAccordionPanelHeaderInner
+{
+    line-height:23px;
+    color:#246F95;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+/* 标题文字 */
+.jueAccordionPanelTitle
+{
+    line-height:23px;
+    color:#246F95;
+    font-weight:bold;
+}
+
+/* 关闭状态折叠开关 */
+.jueAccordionPanelSwitch
+{
+    overflow:hidden;
+    display:block;
+    float:right;
+    margin-top:3px;
+    width:16px;
+    height:16px;
+    background:url(Images/accordion.gif) no-repeat -32px 0;
+}
+
+/* 鼠标悬停时候的关闭状态折叠开关 */
+.jueAccordionPanelSwitch:hover
+{
+    background-position:-48px 0;
+}
+
+/* 展开状态折叠开关 */
+.jueAccordionPanelSwitchExpanded
+{
+    background-position:0 0;
+}
+
+/* 鼠标悬停时候的展开状态折叠开关 */
+.jueAccordionPanelSwitchExpanded:hover
+{
+    background-position:-16px 0;
+}
+
+.jueAccordionPanelSwitch span
+{
+    display:none;
+}
+
+/* 面板内容 */
+.jueAccordionPanelContentW
+{
+}
+.jueAccordionPanelContent
+{
+    padding:2px;
+}
+.jueAccordionPanelContentI
+{
+}
+
+
+/* jueOutlookBar */
+.jueOutlookBar
+{
+    border:1px solid #79bad2;
+    overflow: hidden;
+}
+
+.jueOutlookBarTop {
+    height: 20px;
+    border-bottom:1px solid #79bad2;
+    background-image: url(Images/outlookBar.gif);
+    background-position: left -223px;
+}
+.jueOutlookBarHBox {
+    display: none;
+    background-color: #D5E4F2;
+    font-size: 16px;
+    color: #006393;
+    font-weight: bold;
+    font-family: "黑体";
+    border-top: 1px solid #E1EDF7;
+    border-left: 1px solid #E1EDF7;
+    overflow: hidden;
+}
+.jueOutlookBarTopLeft {
+    float: left;
+    height: 100%;
+    text-indent: 5px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #256F95;
+}
+.jueOutlookBarTopRight {
+    float: right;
+    width: 20px;
+    height: 100%;
+}
+.jueOutlookBarTopRight .Left,.jueOutlookBarTopRight .Right {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/outlookBar.gif);
+    background-position: left -260px;
+}
+.jueOutlookBarTopRight .Right {
+    background-position: left -280px;
+}
+
+.jueOutlookBarTopRight a:hover {
+    filter: Alpha(Opacity=40);
+    opacity: 0.4;
+}
+
+.jueOutlookBarPanelGroup
+{
+    width:100%;
+    background:#fff;
+}
+
+.jueOutlookBarSelectorGroup
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.jueOutlookBarSelector
+{
+    margin:0;
+    padding:0;
+}
+
+.jueOutlookBarSelector a
+{
+    display:block;
+    margin:0;
+    height:23px;
+    border-top:1px solid #79bad2;
+    background:url(Images/outlookBar.gif) repeat-x 0 0;
+    color:#256f95;
+    line-height:23px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.jueOutlookBarSelector a:hover
+{
+    background-position:0 -40px;
+}
+
+.jueOutlookBarSelectorDown a
+{
+    background-position:0 -80px;
+}
+
+.jueOutlookBarSelectorFirst
+{
+}
+
+.jueOutlookBarSelectorCurrent a
+{
+    background-position:0 -120px;
+    color:#044363;
+}
+
+.jueOutlookBarSelectorCurrent a:hover
+{
+    background-position:0 -160px;
+}
+
+.jueOutlookBarSelectorText
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: 25px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.jueOutlookBarSelectorIcon {
+    background-image: url(Images/outlookBar.gif);
+    background-position: left -300px;
+    background-repeat: no-repeat; 
+}
+
+.jueOutlookBarAdjustStrip
+{
+    overflow:hidden;
+    height:5px;
+    border-top:1px solid #4C535C;
+    background:url(Images/outlookBar.gif) repeat-x 0 -200px;
+}
+
+.jueOutlookBarAdjustStripInner
+{
+    overflow:hidden;
+    height:5px;
+    background:url(Images/outlookBar.gif) no-repeat center -210px;
+}
+
+.jueOutlookBarPanel
+{
+    height:100%;
+    overflow:auto;
+}
+
+/* Window */
+.jueWnd
+{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.jueWndTopWrap
+{
+    padding-left:6px;
+    background:url(Images/wnd.gif) no-repeat 0 0;
+    cursor:move;
+}
+
+.jueWndTop
+{
+    padding-right:6px;
+    background:url(Images/wnd.gif) no-repeat right 0;
+}
+
+.jueWndTopInner
+{
+    overflow:hidden;
+    height:29px;
+    background:url(Images/wnd.gif) repeat-x 0 -30px;
+}
+
+.jueWndBodyWrap
+{
+    background:#EEF5F6 url(Images/wnd.gif) repeat-x 0 -70px;
+}
+
+.jueWndBody
+{
+    padding:7px 6px 0;
+}
+
+.jueWndBodyInner
+{
+    overflow:auto;
+}
+
+.jueWndBottomWrap
+{
+    padding-left:8px;
+    background:url(Images/wnd.gif) no-repeat 0 -60px;
+}
+
+.jueWndBottom
+{
+    padding-right:8px;
+    background:url(Images/wnd.gif) no-repeat right -60px;
+}
+
+.jueWndBottomInner
+{
+    overflow:hidden;
+    height:10px;
+    background:#EEF5F6;
+}
+
+.jueWndSysBtnGroup
+{
+    margin:7px 2px 0 0;
+    float:right;
+}
+
+.jueWndSysBtn
+{
+    display:block;
+    float:left;
+    margin-left:4px;
+    width:16px;
+    height:16px;
+    background:url(Images/wnd_btn.gif) no-repeat 0 0;
+}
+
+.jueWndSysBtn span
+{
+    display:none;
+}
+
+.jueWndSysBtnMin
+{
+    background-position:0 0;
+}
+
+.jueWndSysBtnMin:hover
+{
+    background-position:0 -20px;
+}
+
+.jueWndSysBtnMax
+{
+    background-position:-20px 0;
+}
+
+.jueWndSysBtnMax:hover
+{
+    background-position:-20px -20px;
+}
+
+.jueWndSysBtnRestore
+{
+    background-position:-40px 0;
+}
+
+.jueWndSysBtnRestore:hover
+{
+    background-position:-40px -20px;
+}
+
+.jueWndSysBtnClose
+{
+    background-position:-60px 0;
+}
+
+.jueWndSysBtnClose:hover
+{
+    background-position:-60px -20px;
+}
+
+.jueWndTitleText
+{
+    padding-left:5px;
+    color:#246F95;
+    font-weight:bold;
+    line-height:29px;
+    cursor:move;
+}
+
+.jueWndMaximum .jueWndTopWrap
+{
+    padding:0;
+}
+
+.jueWndMaximum .jueWndTop
+{
+    padding:0;
+}
+
+.jueWndMaximum .jueWndTopInner
+{
+}
+
+.jueWndMaximum .jueWndBottomInner
+{
+    height:0;
+}
+
+.jueWndMaximum .jueWndBodyWrap
+{
+    padding:0;
+}
+
+.jueWndMaximum .jueWndBody
+{
+    padding:0;
+}
+
+.jueWndMaximum .jueWndSysBtnMax, .jueWndMinimum .jueWndSysBtnMax
+{
+    background-position:-40px 0;
+}
+
+.jueWndMaximum .jueWndSysBtnMax:hover, .jueWndMinimum .jueWndSysBtnMax:hover
+{
+    background-position:-40px -20px;
+}
+
+.jueDlgBtnGroup
+{
+    clear:both;
+    padding:10px;
+    text-align:right;
+}
+
+.jueDlgBtnGroup .jueBtnWrap
+{
+    margin-left:4px;
+}
+
+/* MessageBox */
+
+/* 消息文字 */
+.jueMsgBoxMsg
+{
+    float:left;
+    padding:20px;
+    height:auto;
+    background-repeat:no-repeat;
+    background-position:10px 10px;
+}
+
+.jueMsgBoxWarning
+{
+    padding-left:60px;
+    background-image:url(Images/msg_warning_32.gif);
+}
+
+.jueMsgBoxError
+{
+    padding-left:60px;
+    background-image:url(Images/msg_error_32.gif);
+}
+
+.jueMsgBoxQuestion
+{
+    padding-left:60px;
+    background-image:url(Images/msg_question_32.gif);
+}
+
+.jueMsgBoxInformation
+{
+    padding-left:60px;
+    background-image:url(Images/msg_information_32.gif);
+}
+
+/* 消息按钮 */
+.jueMsgBoxBtnGroup
+{
+    clear:both;
+    padding:0 15px 15px;
+    text-align:center;
+}
+
+.jueMsgBoxBtnGroup .jueBtnWrap
+{
+    margin:0 4px;
+    display:inline-block;
+}
+
+
+/* 工具栏样式 */
+.jueToolbarWrap
+{
+    clear:both;
+}
+.jueToolbar
+{
+}
+.jueToolbarInner
+{
+}
+
+.jueTbisWrap
+{
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+.jueToolbar .jueBtnWrap
+{
+    float:left;
+     
+}
+
+.jueTbi
+{
+    float:left;
+}
+
+.jueBlankTbi
+{
+    float:left;
+    margin:0;
+    padding:0;
+    height:20px;
+    display: inline;
+}
+
+/* Form */
+.jueForm, .jueFormView
+{
+    color:#666666;
+}
+.jueForm label, .jueFormView label
+{
+    margin:0;
+    padding:0;
+    height:21px;
+    line-height:21px;
+}
+.jueFormItem
+{
+    clear:both;
+    border-bottom:1px solid #C1D2D5;
+    padding:1px 0 1px 5px;
+    background:#EDF5F6;
+    margin-top: 3px;
+}
+
+.jueFormItem .jueBtnWrap {margin-right:4px;}
+
+.jueFormOption
+{
+    clear:both;
+    padding:1px 0 1px 5px;
+}
+
+.jueFormLabel
+{
+    float:left;
+    padding:0;
+    color:#333333;
+    font-weight:bold;
+    line-height:30px;
+    width:100px;
+}
+.jueFormEl
+{
+    padding:2px;
+    background:#fff;
+}
+
+.jueFormElLine
+{
+    padding-top:3px;
+}
+
+.jueTxt, .jueFormTxt
+{
+    border:1px solid #C1D2D5;
+    margin:0;
+    padding:3px 3px;
+    width:144px;
+    background:#F5F9F9 url(Images/txtBg.gif) no-repeat 0 0;
+    color:#666666;
+    line-height:12px;
+    display:inline-block;
+}
+
+.jueDorpdownListSearchTxt
+{
+    border:1px solid #C1D2D5;
+    margin:0;
+    padding:3px 3px;
+    width:127px;
+    background:#F5F9F9 url(Images/txtBg.gif) no-repeat 0 0;
+    color:#666666;
+    line-height:12px;
+    display:inline-block;
+}
+
+.jueTxtMultiLine, .jueFormMultiTxt
+{
+    border:1px solid #C1D2D5;
+    margin:0;
+    padding:3px;
+    background:#F5F9F9 url(Images/txtBg.gif) no-repeat 0 0;
+    color:#666666;
+}
+
+/* DataGrid */
+.jueDataGrid
+{
+    overflow:auto;
+    background:#fff;
+}
+
+.jueDataGridHeader
+{
+    height:23px;
+    border:1px solid #E2EFF2;
+    border-right:none;
+    border-bottom:1px solid #C1D2D5;
+    background:url(Images/datagrid.gif) repeat-x 0 0; 
+}
+
+.jueDataGridColsScrollWrap
+{
+    float:left;
+    overflow:hidden;
+     
+}
+
+.jueDataGridColsScroll
+{
+     overflow:hidden;
+}
+
+.jueDataGridSelectBtnWrap
+{
+    float:left;
+    border-right:1px solid #E2EFF2;
+    width:23px;
+    height:23px;
+    background:url(Images/datagrid.gif) repeat-x 0 0;
+}
+
+a.jueDataGridSelectBtn
+{
+    display:block;
+    float:left;
+    width:23px;
+    height:23px;
+    background:url(Images/chk.gif) no-repeat 4px 4px;
+    cursor:default;
+}
+
+a.jueDataGridSelectBtn:hover
+{
+    background-position:-16px 4px;
+}
+
+a.jueDataGridSelectBtnSelected
+{
+    background-position:-36px 4px;
+}
+
+a.jueDataGridSelectBtnSelected:hover
+{
+    background-position:-56px 4px;
+}
+
+.jueDataGridMenuBtn
+{
+    float:left;
+    border-right:1px solid #E2EFF2;
+    width:23px;
+    height:23px;
+    background:url(Images/datagrid.gif) no-repeat center -56px;
+    display:none;
+}
+
+.jueDataGridMenuBtn:hover
+{
+    background-position:center -86px;
+}
+
+.jueDataGridFixColGroup, .jueDataGridColGroup
+{
+    float:left;
+}
+
+.jueDataGridColGroupWrap
+{
+    float:left;
+    overflow:hidden;
+}
+
+.jueDataGridCol
+{
+    float:left;
+    height:23px;
+}
+
+.jueDataGridColResizeBar
+{
+    float:right;
+    width:5px;
+    height:23px;
+    background:url(Images/datagrid.gif) repeat-x 0 0;
+    border-right:1px solid #E2EFF2;
+    cursor:w-resize;
+}
+
+.jueDataGridColResizeBar:hover
+{
+    background-position:0 -25px;
+}
+
+.jueDataGridColResizeIndicatorW
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:5px;
+    height:23px;
+    background:#C8E0E6;
+    cursor:w-resize;
+}
+
+.jueDataGridColTextWrap
+{
+    display:block;
+    height:23px;
+    line-height:23px;
+    background:url(Images/datagrid.gif) repeat-x 0 0;
+    text-decoration:none;
+    text-align:center;
+    cursor:default;
+    color:#256F95;
+    font-weight:bold;
+}
+
+.jueDataGridColTextWrap:hover
+{
+}
+
+.jueDataGridColText
+{
+    display:block;
+}
+
+.jueDataGridColAsc .jueDataGridColText
+{
+    background:url(Images/datagrid.gif) no-repeat right -145px;
+}
+
+.jueDataGridColDesc .jueDataGridColText
+{
+    background:url(Images/datagrid.gif) no-repeat right -120px;
+}
+
+.jueDataGridBodyWrap
+{
+    
+}
+
+.jueDataGridBody
+{
+    border-left:1px solid #E5EEF0;
+}
+
+.jueDataGridFixTableWrap
+{
+    float:left;
+    overflow:visible;
+}
+
+.jueDataGridTableWrap
+{
+    float:left;
+    overflow:hidden;
+    overflow-y:visible;
+}
+
+.jueDataGridTable
+{
+    margin:0;
+   /* border-collapse:collapse;*/
+    table-layout:fixed;
+    
+}
+
+.jueDataGridTable tr
+{
+    background:#F4F9FA;
+}
+
+.jueDataGridTable .jueDataGridRowAlt
+{
+    background:#fff;
+}
+
+.jueDataGridTable .jueDataGridRowSelected
+{
+    background:#DDE8F6;
+}
+
+.jueDataGridTable .jueDataGridRowActive
+{
+    background:#B2CEFA;
+}
+
+.jueDataGridTable td
+{
+    border-bottom:1px solid #C1D2D5;
+    margin:0;
+    padding:0;
+    line-height:25px;
+    color:#333333;
+    cursor:default; 
+    border-right:1px solid #E5EEF0;
+   
+}
+
+.jueDataGridCellInner { 
+       height:100%;
+       padding: 0 3px; 
+}
+.jueDataGridCellInnerAutoWrap { 
+   width: inherit;
+  
+}
+.jueDataGridCellInnerOverFlow {
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis; 
+     width: inherit; 
+}
+
+.jueDataGridAutoWrap .jueDataGridCellInner
+{
+    white-space:normal;
+    word-break:break-all;
+}
+
+.jueDataGridHilightHover tr:hover
+{
+    background-color:#DBE8FC;
+}
+
+.jueDataGridHandHover tr,
+.jueDataGridHandHover td,
+.jueDataGridHandHover .jueDataGridCellInner
+{
+    cursor:pointer;
+}
+
+.jueDataGridRowSelColGroup
+{
+    width:24px;
+}
+
+.jueDataGridRowSel
+{
+    display:block;
+    float:left;
+    border-right:1px solid #E5EEF0;
+    width:23px;
+    height:23px;
+    background:url(Images/chk.gif) no-repeat 4px 4px;
+    cursor:default;
+}
+
+.jueDataGridRowSel:hover
+{
+    background-position:-16px 4px;
+}
+
+.jueDataGridRowSelected .jueDataGridRowSel
+{
+    background-position:-36px 4px;
+}
+
+.jueDataGridRowSelected .jueDataGridRowSel:hover
+{
+    background-position:-56px 4px;
+}
+
+.jueDataGridEmptyMsg
+{
+    clear:both;
+    padding:10px;
+    text-align:center;
+    color:#666;
+}
+
+.jueDataGridCmdLink
+{
+    color:#333;
+    margin:0 2px;
+}
+
+.jueDataGridCmdLink:hover
+{
+    text-decoration:underline;
+}
+
+.jueGridInCellTxt
+{
+    margin:0;
+    padding:0;
+    border:0;
+    background:#fff;
+    color:#666666;
+    z-index:6000;
+}
+
+.jueGridChkBox
+{
+    display:block;
+    margin:0 auto;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    background:url(Images/chk.gif) no-repeat 0 0;
+    cursor:default;
+}
+
+.jueGridChkBox:hover
+{
+    background-position:-20px 0;
+}
+
+.jueGridChkBoxChecked
+{
+    display:block;
+    margin:0 auto;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    background:url(Images/chk.gif) no-repeat -40px 0;
+    cursor:default;
+}
+
+.jueGridChkBoxChecked:hover
+{
+    background-position:-60px 0;
+}
+
+
+/* Panel */
+.juePnl
+{
+    background:#fff;
+}
+
+.juePnlHeaderW
+{
+    clear:both;
+    border:1px solid #E1E9EB;
+    border-bottom-color:#C1D2D5;
+    height:23px;
+    background:url(Images/dataGrid.gif) repeat-x 0 0;
+}
+
+.juePnlHeader
+{
+    padding:0 5px;
+}
+
+.juePnlHeaderI
+{
+    color:#246F95;
+    line-height:23px;
+}
+
+.juePnlContentW
+{
+}
+
+.juePnlContent
+{
+    border:1px solid #E1E9EB;
+    border-top:0;
+    border-bottom:0;
+    padding:5px;
+    overflow:auto;
+}
+
+.juePnlContentI
+{
+    overflow:visible;
+}
+
+.juePnlFooterW
+{
+}
+
+.juePnlFooter
+{
+    padding:0 10px;
+   border-bottom: 1px solid #E1E9EB;
+border-left: 1px solid #E1E9EB;
+border-right: 1px solid #E1E9EB;
+}
+
+.juePnlFooterI
+{
+}
+
+.jueChkWrap
+{
+}
+
+.jueChk
+{
+    display:none;
+}
+
+.jueChkBox
+{
+    vertical-align:middle;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    background:url(Images/chk.gif) no-repeat 0 0px;
+    cursor:default;
+}
+
+.jueChkBox:hover
+{
+    background:url(Images/chk.gif) no-repeat -20px 0;
+}
+
+.jueChkChecked
+{
+    background:url(Images/chk.gif) no-repeat -40px 0;
+}
+
+.jueChkChecked:hover
+{
+    background:url(Images/chk.gif) no-repeat -60px 0;
+}
+
+.jueChkLbl
+{
+    margin:0;
+    padding:0;
+    color:#000;
+}
+
+.jueChkReadOnly
+{
+}
+
+.jueChkReadOnly .jueChkBox
+{
+    background:url(Images/chk.gif) no-repeat -80px 0;
+}
+
+.jueChkReadOnly .jueChkChecked
+{
+    background:url(Images/chk.gif) no-repeat -100px 0;
+}
+
+.jueChkReadOnly .jueChkLbl
+{
+    color:#666;
+}
+
+.jueChkBoxList
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.jueChkBoxListItem
+{
+    display: inline-block;
+    margin:0;
+    padding:2px 15px 2px 0;
+ 
+}
+
+.jueChkBoxListVer .jueChkBoxListItem
+{
+    display:list-item;
+}
+
+
+
+
+/*Dropdown Control*/
+.jueDrpWrap
+{
+    height:21px;
+    padding-left:3px;
+    background:url(Images/dropdown.gif) no-repeat 0 0;
+    display:inline-block;
+}
+
+.jueDrp
+{
+    height:21px;
+    padding-right:3px;
+    background:url(Images/dropdown.gif) no-repeat right 0;
+}
+
+.jueDrpInner
+{
+    height:21px;
+    background:url(Images/dropdown.gif) repeat-x 0 -25px;
+    overflow:hidden;
+}
+
+.jueDrpHover
+{
+    background-position:0 -50px;
+}
+
+.jueDrpHover .jueDrp
+{
+    background-position:right -50px;
+}
+
+.jueDrpHover .jueDrpInner
+{
+    background-position:0 -75px;
+}
+
+.jueDrpDown
+{
+    background-position:0 -100px;
+}
+
+.jueDrpDown .jueDrp
+{
+    background-position:right -100px;
+}
+
+.jueDrpDown .jueDrpInner
+{
+    background-position:0 -125px;
+}
+
+.jueDrpBtn
+{
+    float:right;
+    width:16px;
+    height:21px;
+    background:url(Images/dropdownbtn.gif) no-repeat 0 3px;
+}
+
+.jueDrpLbl
+{
+    float:left;
+    line-height:21px;
+    color:#000;
+    cursor:default;
+    overflow:hidden;
+    word-break:keep-all;/* 不换行 */
+    white-space:nowrap;/* 不换行 */
+    text-overflow:ellipsis;
+    
+    
+}
+
+.jueDrpBox
+{
+    position:absolute;
+    top:0px;
+    overflow:auto;
+    border:1px solid #646464;
+    background:#fff;
+    z-index:5000;
+}
+
+.jueDrpList
+{
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+.jueDrpListItem
+{
+    margin:0;
+    padding:0;
+    height:auto;
+    line-height:18px; 
+      display:block;
+     
+}
+
+.jueDrpListItem a
+{
+    display:block;
+    margin:0;
+    padding:0 3px; 
+    color:#000;
+    text-decoration:none;
+    cursor:default;
+    overflow:hidden;
+    text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.jueDrpListItem_a
+{
+    display:block;
+    margin:0;
+    padding:0 3px; 
+    color:#000;
+    text-decoration:none;
+    cursor:default;
+    overflow:hidden;
+    text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.jueDrpListItem a:hover
+{
+    background:#3399FF;
+    color:#fff;
+}
+
+.jueDrpListItem_a_hover
+{
+    background:#3399FF;
+    color:#fff;
+}
+
+.jueDrpOpt, .jueDlgOpt, .jueFormOpt
+{
+    clear:both;
+    padding:5px 0;
+    text-align:center;
+}
+
+.jueDrpOpt .jueBtnWrap, .jueDlgOpt .jueBtnWrap, .jueFormOpt .jueBtnWrap, .jueDrpOpt .miniBtn
+{
+    margin:0 3px;
+    display:inline-block;
+}
+/* 日历 */
+.jueCalendarWrap
+{
+    padding:5px;
+}
+
+.jueCalendar
+{
+    clear:both; 
+    min-width: 137px;
+    width: 100%;
+}
+
+.jueCalendar td, .jueCalendar th
+{
+    width:20px;
+    height:20px;
+    text-align:center;
+}
+
+.jueCalendar th
+{
+    background:#ccc;
+}
+
+.jueCalendar a
+{
+    display:block;
+    height:20px;
+    color:#000;
+    text-decoration:none;
+    line-height:20px;
+}
+
+.jueCalendar a:hover
+{
+    background:#3399FF;
+    color:#fff;
+}
+
+th.jueCalendarDay0
+{
+    color:#f00;
+}
+th.jueCalendarDay6
+{
+    color:#f00;
+}
+
+td.jueCalendarDay0 a
+{
+    color:#f00;
+}
+td.jueCalendarDay6 a
+{
+    color:#f00;
+}
+.jueCalendar .jueCalendarDayPrevM
+{
+    color:#3399FF;
+}
+
+.jueCalendar .jueCalendarDayNextM
+{
+    color:#3399FF;
+}
+
+.jueCalendar .jueCalendarDayDisabled
+{
+    color:#999999;
+    text-decoration:none;
+    cursor:default;
+}
+
+.jueCalendar .jueCalendarDayDisabled:hover
+{
+    color:#999999;
+    background:none;
+}
+
+.jueCalendar .jueCalendarDayToday
+{
+    background:#3399FF;
+    color:#fff;
+}
+
+.jueCalendarLocator
+{
+    padding:0 4px;
+}
+
+.jueCalendarYearPrev, .jueCalendarMonthPrev
+{
+    float:left;
+    display:block;
+    width:16px;
+    height:16px;
+    background:url(Images/calendar.gif) no-repeat center -40px;
+}
+
+.jueCalendarYearNext, .jueCalendarMonthNext
+{
+    float:left;
+    display:block;
+    width:16px;
+    height:16px;
+    background:url(Images/calendar.gif) no-repeat center -20px;
+}
+
+.jueCalendarYearPrev:hover, .jueCalendarMonthPrev:hover
+{
+    background-position:center -80px;
+}
+
+.jueCalendarYearNext:hover, .jueCalendarMonthNext:hover
+{
+    background-position:center -60px;
+}
+
+.jueCalendarYear, .jueCalendarMonth
+{
+    float:left;
+    line-height:16px;
+    
+}
+
+.jueDatePickerOperation
+{
+    border-top:1px solid #ccc;
+    margin:0 3px 3px;
+    padding-top:3px;
+    text-align:right;
+}
+
+.jueDatePickerOperation a
+{
+    text-decoration:none;
+}
+
+.jueDatePickerOperation a:hover
+{
+    text-decoration:underline;
+}
+
+.jueDatePickerBtnClear
+{
+    color:#f00;
+}
+
+.jueDatePickerBtnToday
+{
+    margin-left:5px;
+    color:#3399FF;
+}
+
+
+/* PagePilot */
+.juePagePilot
+{
+    clear:both;
+    text-align:right;
+}
+
+.juePagePilotPageInfo
+{
+    color:#666;
+}
+
+.juePagePilotPrev,
+.juePagePilotNext
+{
+    margin:0 0 0 5px;
+    color:#000;
+    text-decoration:underline;
+}
+
+.juePagePilotPrevDisable,
+.juePagePilotNextDisable
+{
+    cursor:default;
+    text-decoration:none;
+    color:#666;
+}
+
+.juePagePilotPageNumTxt
+{
+    border:1px solid #97c9b4;
+    margin:0 0 0 5px;
+    padding:0;
+    width:30px;
+    height:17px;
+    line-height:17px;
+}
+#elBg{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5; 
+    filter: alpha(opacity=50);
+    zoom: 1;
+
+ }

@@ -1,0 +1,123 @@
+/* Splitter */
+.jueSplitter
+{
+    width: 100%;
+    
+}
+
+.jueSplitterVertical .jueSplitterCell
+{
+    float:left;
+    height:100%;
+    overflow-y:auto;
+    
+}
+
+.jueSplitterVertical .jueSplitterBarWrap
+{
+    float:left;
+    width:7px;
+    background:#dcebf0;
+    height:100%;
+    cursor:e-resize;
+}
+
+.jueSplitterVertical .jueSplitterBarWrapHidden {
+    float:left;
+    width:7px;
+    background:#dcebf0;
+    height:100%;
+    cursor:e-resize;
+    filter: Alpha(Opacity=0);
+    opacity: 0;
+}
+
+.jueSplitterVertical .jueSplitterBar
+{
+    background:url(Images/splitter_v.gif) no-repeat 0 center;
+    height:100%;
+    cursor:e-resize;
+}
+
+.jueSplitterVertical .jueSplitterIndicatorWrap
+{
+    width:7px;
+    background: #dcebf0;
+    height:100%;
+    cursor:e-resize;
+    border-left: 1px solid #82B4DD;
+    border-right: 1px solid #82B4DD;
+    filter: Alpha(Opacity=70);
+    opacity: 0.7;
+}
+
+.jueSplitterVertical .jueSplitterIndicator
+{
+    height:100%;
+    cursor:e-resize;
+}
+
+.jueSplitterVertical .jueSplitterBtnGroup
+{
+    position:relative;
+}
+
+.jueSplitterVertical .jueSplitterBtnMax
+{
+    display:block;
+    margin-top:3px;
+    width:7px;
+    height:20px;
+    cursor:pointer;
+    background:url(Images/splitter_vBtn.gif) no-repeat right center;
+}
+
+.jueSplitterVertical .jueSplitterBtnMin
+{
+    display:block;
+    width:7px;
+    height:20px;
+    cursor:pointer;
+    background:url(Images/splitter_vBtn.gif) no-repeat 0 center;
+}
+
+.jueSplitterHorizon .jueSplitterCell
+{
+    overflow:auto;
+}
+
+.jueSplitterHorizon .jueSplitterBar
+{
+    height:5px;
+    background:#D4D0C8;
+    cursor:n-resize;
+}
+
+.jueSplitterHorizon .jueSplitterIndicator
+{
+    height:5px;
+    background:#000;
+    cursor:n-resize;
+}
+
+.jueSplitterHorizon .jueSplitterBtnGroup
+{
+    
+}
+
+.jueSplitterHorizon .jueSplitterBtnMax
+{
+    display:block;
+    width:3px;
+    height:3px;
+    cursor:default;
+}
+
+.jueSplitterHorizon .jueSplitterBtnMin
+{
+    display:block;
+    width:3px;
+    height:3px;
+    cursor:default;
+}
+

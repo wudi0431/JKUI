@@ -1,0 +1,340 @@
+/*
+ * Button
+ */
+.jueBtn
+{
+    overflow:visible;
+    padding:0 0 0 3px;
+    background:url(Images/btn.gif) no-repeat left 0;
+    height:25px;
+    display:inline-block;
+    cursor:default;
+}
+.jueBtnInner
+{
+    overflow:visible;
+    padding:0 3px 0 0;
+    background:url(Images/btn.gif) no-repeat right 0;
+    height:25px;
+    display: inline-block;
+}
+.jueBtnWrap {
+
+    /*display: inline-table;   */
+
+}
+.jueBtnBtn
+{
+    overflow:visible;
+    margin:0;
+    padding:0;
+    border:0;
+    background:transparent url(Images/btn.gif) repeat-x 0 -30px;
+    height:25px;
+}
+
+.jueBtnText
+{
+    padding:0 10px;
+    line-height:25px;
+    color:#256f95;
+}
+
+/* Hover & Active */
+.jueBtnHover .jueBtn, .jueBtnActive .jueBtn
+{
+    background-position:0 -60px;
+}
+
+.jueBtnHover .jueBtnInner, .jueBtnActive .jueBtnInner
+{
+    background-position:right -60px;
+}
+
+.jueBtnHover .jueBtnBtn, .jueBtnActive .jueBtnBtn
+{
+    background-position:0 -90px;
+}
+
+.jueBtnHover .jueBtnText
+{
+    color:#fff;
+}
+
+/* Down */
+.jueBtnDown .jueBtn
+{
+    background-position:0 -120px;
+}
+
+.jueBtnDown .jueBtnInner
+{
+    background-position:right -120px;
+}
+
+.jueBtnDown .jueBtnBtn
+{
+    background-position:0 -150px;
+}
+
+.jueBtnDown .jueBtnText
+{
+    color:#538fad;
+}
+
+/* Gray / Disabled */
+.jueBtnGray .jueBtnL
+{
+    background-position:0 -180px;
+}
+
+.jueBtnGray .jueBtnM
+{
+    background-position:0 -210px;
+}
+
+.jueBtnGray .jueBtnR
+{
+    background-position:right -180px;
+}
+
+.jueBtnGray .jueBtnText
+{
+    color:#9ea1a2;
+}
+
+/* 工具栏样式 */
+.jueToolbarWrap
+{
+    clear:both;
+    padding:0px 0;
+    height:20px;
+    border-top:1px solid #c5d6da;
+    border-bottom:1px solid #c5d6da;
+    background:url(Images/toolBar.gif) repeat-x 0 0;
+}
+
+.jueToolbar
+{
+    padding:0 5px;
+}
+
+.jueToolbarInner
+{
+    height:20px;
+    overflow:hidden;
+}
+
+.jueToolbarItem
+{
+    float:left;
+}
+
+.jueTbisWrap .jueBtnWrap
+{
+    margin:0;
+}
+
+/* 工具栏按钮 */
+.jueTbisWrap .jueBtn
+{
+    overflow:visible;
+    padding:0 0 0 3px;
+    background:url(Images/toolBtn.gif) no-repeat left 0;
+    height:20px;
+    display:table-cell;
+    cursor:default;
+}
+
+.jueTbisWrap .jueBtnInner
+{
+    overflow:visible;
+    padding:0 3px 0 0;
+    background:url(Images/toolBtn.gif) no-repeat right 0;
+    height:20px;
+    display:table-cell;
+}
+
+.jueTbisWrap .jueBtnBtn
+{
+    overflow:visible;
+    margin:0;
+    padding:0;
+    border:0;
+    background:transparent url(Images/toolBtn.gif) repeat-x 0 -30px;
+    height:20px;
+}
+
+.jueTbisWrap .jueBtnText
+{
+    padding:0 5px 3px;
+    line-height:20px;
+    color:#666666;
+}
+
+/* Hover & Active */
+.jueTbisWrap .jueBtnHover .jueBtn,.jueTbisWrap  .jueBtnActive .jueBtn
+{
+    background-position:0 -60px;
+}
+
+.jueTbisWrap .jueBtnHover .jueBtnInner,.jueTbisWrap  .jueBtnActive .jueBtnInner
+{
+    background-position:right -60px;
+}
+
+.jueTbisWrap .jueBtnHover .jueBtnBtn,.jueTbisWrap  .jueBtnActive .jueBtnBtn
+{
+    background-position:0 -90px;
+}
+
+.jueTbisWrap .jueBtnHover .jueBtnText
+{
+    color:#666666;
+}
+
+/* Down */
+.jueTbisWrap .jueBtnDown .jueBtn
+{
+    background-position:0 -120px;
+}
+
+.jueTbisWrap .jueBtnDown .jueBtnInner
+{
+    background-position:right -120px;
+}
+
+.jueTbisWrap .jueBtnDown .jueBtnBtn
+{
+    background-position:0 -150px;
+}
+
+.jueTbisWrap .jueBtnDown .jueBtnText
+{
+    color:#666666;
+}
+
+/* Gray / Disabled */
+.jueTbisWrap .jueBtnGray .jueBtnL
+{
+    background-position:0 -180px;
+}
+
+.jueTbisWrap .jueBtnGray .jueBtnM
+{
+    background-position:0 -210px;
+}
+
+.jueTbisWrap .jueBtnGray .jueBtnR
+{
+    background-position:right -180px;
+}
+
+.jueTbisWrap .jueBtnGray .jueBtnText
+{
+    color:#666666;
+}
+
+
+/*
+ * miniButton
+ */
+.miniBtn
+{
+    overflow:visible;
+    padding:0 0 0 3px;
+    background:url(Images/btn.gif) no-repeat left -235px;
+    height:20px;
+    display:table-cell;
+    cursor:default;
+}
+
+.miniBtnInner
+{
+    overflow:visible;
+    padding:0 3px 0 0;
+    background:url(Images/btn.gif) no-repeat right -235px;
+    height:20px;
+    display:table-cell;
+}
+
+.miniBtnBtn
+{
+    overflow:visible;
+    margin:0;
+    padding:0;
+    border:0;
+    background:transparent url(Images/btn.gif) repeat-x 0 -260px;
+    height:20px;
+}
+
+.miniBtnText
+{
+    padding:0 10px;
+    line-height:20px;
+    color:#256f95;
+}
+
+/* Hover & Active */
+.miniBtnHover .miniBtn, .miniBtnActive .miniBtn
+{
+    background-position:0 -285px;
+}
+
+.miniBtnHover .miniBtnInner, .miniBtnActive .miniBtnInner
+{
+    background-position:right -285px;
+}
+
+.miniBtnHover .miniBtnBtn, .miniBtnActive .miniBtnBtn
+{
+    background-position:0 -315px;
+}
+
+.miniBtnHover .miniBtnText
+{
+    color:#fff;
+}
+
+/* Down */
+.miniBtnDown .miniBtn
+{
+    background-position:0 -340px;
+}
+
+.miniBtnDown .miniBtnInner
+{
+    background-position:right -340px;
+}
+
+.miniBtnDown .miniBtnBtn
+{
+    background-position:0 -365px;
+}
+
+.miniBtnDown .miniBtnText
+{
+    color:#538fad;
+}
+
+/* Gray / Disabled */
+.miniBtnGray .jueBtnL
+{
+    background-position:0 -180px;
+}
+
+.miniBtnGray .miniBtnM
+{
+    background-position:0 -210px;
+}
+
+.miniBtnGray .miniBtnR
+{
+    background-position:right -180px;
+}
+
+.miniBtnGray .miniBtnText
+{
+    color:#9ea1a2;
+}
+
